@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar{
+    position: sticky;
+    top:0;
+    left: 0;
+    z-index:200;
+    padding-left: 70px;
+    padding-right: 80px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+    
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color: #29f700 !important;
+}
+
+#navbarSupportedContent a {
+    color: #fff;
+   
+}
+#navbarSupportedContent a:hover{
+    background-color: #80f469;
+    color: black;
+    font-weight:600;
+}
+#navbarSupportedContent button{
+    background-color: #29f700;
+    width: 5rem;
+    border-radius: 15px;
+}
+
+/*--------home----------*/
+
+.homesection{
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(image/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#home h1{
+    color: #fff;
+    font-size: 100px;
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 1px 0px #ccc,
+                 0px 2px 0px #ccc,
+                 0px 3px 0px #ccc,
+                 0px 4px 0px #ccc,
+                 0px 5px 0px #ccc,
+                 0px 6px 0px #ccc;                         
+}
+#home p {
+    font-size: 20px;
+    color:#fff;
+    text-align: center;
+}
+
+
+
+.homesection .input-group{
+    width: 40%;
+    height: 46px;
+}
+.homesection .signin{
+    background: #29f700 !important;
+    font-weight:600;
+    height: 39px;
+    box-shadow: 2px 4px 5px(rgba(0,0,0,0.2));
+}
+
+
+
+#about {
+   background:linear-gradient(to right,   rgb(240, 240, 154),#fc6787 100%); 
+   min-height: 80vh;
+}
+
+#about h1{
+    padding-top: 70px;
+    font-weight: 800;
+    font-size: 50px;
+}
+#about p{
+    font-weight: 600;
+    text-align: justify;
+    margin: auto;
+  
+}
+
+/*-----------Product------------*/
+#product{
+   
+    background: #f2eeee;
+}
+
+#product h1{
+    
+    font-size:50px;
+    padding-top: 70px;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+}
+#product img{
+  width:200px;
+  height: 180px;
+}
+.card{
+    width:250px;
+    height:300px;
+    background: #f8f5f5 !important;
+    border: none;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.3),
+                inset 4px 4px 10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px;
+}
+
+.card:hover{
+ 
+    box-shadow: inset 5px 10px 10px rgba(0,0,0,0.3),
+                inset -4px -4px 10px white;
+    transition: 1s;
+}
+
+
+
+/*---contact----*/
+
+#contact img{
+    width:100%;
+}
+
+.box{
+    width: 80%;
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+#contact input{
+    margin: 10px 0px;
+}
+#contact textarea{
+    margin: 10px 0px;
+}
+
+/*-------footer---------*/
+
+.footer {
+    width:100%;
+    text-align: center;
+}
+
+
+.icons .fa {
+color : #f44336;
+margin:0 12px;
+cursor: pointer;
+}
+.fa-heart-o{
+    color: #f44336;
+}
+
+@media(max-width:600px){
+    #home h1{
+        font-size:70px;
+    }
+    #home p{
+        font-size: 17px;
+    }
+    .homesection .input-group{
+        width: 80%;
+        height: 46px;
+    }
+    .homesection .signin{
+        background: #29f700 !important;
+        font-weight:600;
+        height: 39px;
+        
+        box-shadow: 2px 4px 5px(rgba(0,0,0,0.2));
+    }
+
+    #about h1{
+        font-weight:600;
+        font-size: 30px;
+    }
+}
